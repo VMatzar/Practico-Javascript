@@ -20,20 +20,25 @@
         <div class="container">
 
             <div class="serviceBox">
-                <div class="icon" style="--i:#BDEBF1">
+                <div class="icon" style="--i:#BDEBF1;">
                     <ion-icon name="square-outline"></ion-icon>
                 </div>
                 <div class="content">
                     <h2>Cuadrado</h2>
                     <h4>Calcula el &aacute;rea y per&iacute;metro de un Cuadrado</h4>
-                    <form>
-                        <label for="InputCuadrado">Escribe cu&aacute;nto mide cada lado de tu cuadrado:</label>
-                        <input id="InputCuadrado" type="number" />
-                        <button type="button" onclick="calcularPerimetroCuadrado()">
-                            Calcular el Per&iacute;metro
+                    <form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputCuadrado">Escribe cu&aacute;nto mide cada lado de tu cuadrado:</label>
+                            <input id="InputCuadrado" type="number" />
+                        </section>
+
+                        <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
+                            onclick="calcularPerimetroCuadrado()">
+                            Calcular Per&iacute;metro
                         </button>
-                        <button type="button" onclick="calcularAreaCuadrado()">
-                            Calcular el &Aacute;rea
+                        <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
+                            onclick="calcularAreaCuadrado()">
+                            Calcular &aacute;rea
                         </button>
                     </form>
                 </div>
@@ -47,25 +52,28 @@
                     <h2>Triangulo</h2>
                     <h4>Calcula el &aacute;rea y per&iacute;metro de un Triangulo</h4>
 
-                    <form>
-                        <label for="InputBaseTriangulo">Escribe cu&aacute;nto mide la base del triangulo:</label>
-                        <input id="InputBaseTriangulo" type="number" />
+                    <form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputBaseTriangulo">Escribe cu&aacute;nto mide la base del triangulo:</label>
+                            <input id="InputBaseTriangulo" type="number" />
 
-                        <label for="InputLado1Triangulo">Escribe cu&aacute;nto mide el segundo lado del
-                            triangulo:</label>
-                        <input id="InputLado1Triangulo" type="number" />
+                            <label for="InputLado1Triangulo">Escribe cu&aacute;nto mide el segundo lado del
+                                triangulo:</label>
+                            <input id="InputLado1Triangulo" type="number" />
 
-                        <label for="InputLado2Triangulo">Escribe cu&aacute;nto mide el tercer lado tu triangulo:</label>
-                        <input id="InputLado2Triangulo" type="number" />
+                            <label for="InputLado2Triangulo">Escribe cu&aacute;nto mide el tercer lado tu
+                                triangulo:</label>
+                            <input id="InputLado2Triangulo" type="number" />
 
-                        <label for="InputAlturaTriangulo">Escribe cu&aacute;nto mide la altura de tu triangulo:</label>
-                        <input id="InputAlturaTriangulo" type="number" />
-
-                        <button type="button" onclick="calcularPerimetroTriangulo()">
-                            Calcular el Per&iacute;metro
+                            <label for="InputAlturaTriangulo">Escribe cu&aacute;nto mide la altura de tu
+                                triangulo:</label>
+                            <input id="InputAlturaTriangulo" type="number" />
+                        </section>
+                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button" onclick="calcularPerimetroTriangulo()">
+                            Calcular Per&iacute;metro
                         </button>
-                        <button type="button" onclick="calcularAreaTriangulo()">
-                            Calcular el &Aacute;rea
+                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button" onclick="calcularAreaTriangulo()">
+                            Calcular &Aacute;rea
                         </button>
                     </form>
                 </div>
