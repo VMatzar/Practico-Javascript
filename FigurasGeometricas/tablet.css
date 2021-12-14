@@ -1,0 +1,7 @@
+.container .serviceBox .content .form-container .buttons{
+    flex-direction:row;
+    gap: 4px;
+}
+.container .serviceBox{
+    height: 455px;
+}

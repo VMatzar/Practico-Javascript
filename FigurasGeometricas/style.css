@@ -38,18 +38,20 @@ html{
 }
 .container{
     position:relative;
-    min-height: 100vh;
     width: 1200px;
     display:flex;
     justify-content: center;
     align-items: center;
     gap:20px;
     flex-wrap: wrap;
+    padding: 0 15px;
 }
 .container .serviceBox{
     position: relative;
-    width: 550px;
-    height: 480px;
+    min-width: 300px;
+    width: 50vw;
+    max-width: 530px;
+    height: 530px;
     background: #51446e;
     border-radius: 20px;
     overflow: hidden;
@@ -113,7 +115,7 @@ html{
     line-height: 1.5em;
 }
 .container .serviceBox .content .form-container .labelAndInputs{
-    padding: 20px 0;
+    padding: 6px 0;
     display:flex;
     flex-direction: column;
 }
@@ -130,8 +132,16 @@ html{
     border-color: #dfe1e500;
     font-family: 'Poppins', sans-serif;
   }
+  .container .serviceBox .content .form-container .buttons{
+      display:flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
   .container .serviceBox .content .form-container .card-button {
-    width: 160px;
+    width: 200px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
@@ -176,3 +186,9 @@ html{
   .container .serviceBox .content .form-container .card-button:active {
     top: 2px;
   }
+  footer{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin: 25px 0;
+}

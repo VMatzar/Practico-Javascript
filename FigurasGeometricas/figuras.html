@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas | JS Práctico</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 930px)">
 </head>
 
 <body>
@@ -31,15 +32,16 @@
                             <label for="InputCuadrado">Escribe cu&aacute;nto mide cada lado de tu cuadrado:</label>
                             <input id="InputCuadrado" type="number" />
                         </section>
-
-                        <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
-                            onclick="calcularPerimetroCuadrado()">
-                            Calcular Per&iacute;metro
-                        </button>
-                        <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
-                            onclick="calcularAreaCuadrado()">
-                            Calcular &aacute;rea
-                        </button>
+                        <section class="buttons">
+                            <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
+                                onclick="calcularPerimetroCuadrado()">
+                                Calcular Per&iacute;metro
+                            </button>
+                            <button style="--i:#BDEBF1;--o:#60e2f3;" class="card-button" type="button"
+                                onclick="calcularAreaCuadrado()">
+                                Calcular &aacute;rea
+                            </button>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -69,14 +71,16 @@
                                 triangulo:</label>
                             <input id="InputAlturaTriangulo" type="number" />
                         </section>
-                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
-                            onclick="calcularPerimetroTriangulo()">
-                            Calcular Per&iacute;metro
-                        </button>
-                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
-                            onclick="calcularAreaTriangulo()">
-                            Calcular &Aacute;rea
-                        </button>
+                        <section class="buttons">
+                            <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
+                                onclick="calcularPerimetroTriangulo()">
+                                Calcular Per&iacute;metro
+                            </button>
+                            <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
+                                onclick="calcularAreaTriangulo()">
+                                Calcular &Aacute;rea
+                            </button>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -94,14 +98,17 @@
                             <label for="InputCirculo">Escribe cu&aacute;nto mide el radio de tu circulo:</label>
                             <input id="InputCirculo" type="number" />
                         </section>
-                        <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
-                            onclick="calcularPerimetroCirculo()">
-                            Calcular Per&iacute;metro
-                        </button>
-                        <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
-                            onclick="calcularAreaCirculo()">
-                            Calcular &Aacute;rea
-                        </button>
+                        <section class="buttons">
+
+                            <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
+                                onclick="calcularPerimetroCirculo()">
+                                Calcular Per&iacute;metro
+                            </button>
+                            <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
+                                onclick="calcularAreaCirculo()">
+                                Calcular &Aacute;rea
+                            </button>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -119,22 +126,28 @@
                             <label for="InputBaseRectangulo">Escribe cu&aacute;nto mide la base del Rectangulo:</label>
                             <input id="InputBaseRectangulo" type="number" />
 
-                            <label for="InputAlturaRectangulo">Escribe cu&aacute;nto mide la altura del Rectangulo</label>
+                            <label for="InputAlturaRectangulo">Escribe cu&aacute;nto mide la altura del
+                                Rectangulo</label>
                             <input id="InputAlturaRectangulo" type="number" />
                         </section>
-                        <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
-                            onclick="calcularPerimetroRectangulo()">
-                            Calcular Perimetro
-                        </button>
-                        <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
-                            onclick="calcularAreaRectangulo()">
-                            Calcular Area
-                        </button>
+                        <section class="buttons">
+                            <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
+                                onclick="calcularPerimetroRectangulo()">
+                                Calcular Perimetro
+                            </button>
+                            <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
+                                onclick="calcularAreaRectangulo()">
+                                Calcular Area
+                            </button>
+                        </section>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <p>Desarrollado por Victor M. con 💛</p>
+    </footer>
     <!-- IonicIcons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
