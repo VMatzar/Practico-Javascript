@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | JS Práctico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>Figuras Geometricas</h1>
+        <p>Primer Taller del Curso Pr&aacute;ctico de JavaScript. Calcula el perimetro y area de un cuadrado, triangulo,
+            circulo, cuadrado</p>
+    </header>
+
+    <section class="geometry-container">
+        <div class="container">
+
+            <div class="serviceBox">
+                <div class="icon" style="--i:#BDEBF1">
+                    <ion-icon name="square-outline"></ion-icon>
+                </div>
+                <div class="content">
+                    <h2>Cuadrado</h2>
+                    <h4>Calcula el &aacute;rea y per&iacute;metro de un Cuadrado</h4>
+                    <form>
+                        <label for="InputCuadrado">Escribe cu&aacute;nto mide cada lado de tu cuadrado:</label>
+                        <input id="InputCuadrado" type="number" />
+                        <button type="button" onclick="calcularPerimetroCuadrado()">
+                            Calcular el Per&iacute;metro
+                        </button>
+                        <button type="button" onclick="calcularAreaCuadrado()">
+                            Calcular el &Aacute;rea
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="serviceBox">
+                <div class="icon" style="--i:#FFCA00">
+                    <ion-icon name="triangle-outline"></ion-icon>
+                </div>
+                <div class="content">
+                    <h2>Triangulo</h2>
+                    <h4>Calcula el &aacute;rea y per&iacute;metro de un Triangulo</h4>
+
+                    <form>
+                        <label for="InputBaseTriangulo">Escribe cu&aacute;nto mide la base del triangulo:</label>
+                        <input id="InputBaseTriangulo" type="number" />
+
+                        <label for="InputLado1Triangulo">Escribe cu&aacute;nto mide el segundo lado del
+                            triangulo:</label>
+                        <input id="InputLado1Triangulo" type="number" />
+
+                        <label for="InputLado2Triangulo">Escribe cu&aacute;nto mide el tercer lado tu triangulo:</label>
+                        <input id="InputLado2Triangulo" type="number" />
+
+                        <label for="InputAlturaTriangulo">Escribe cu&aacute;nto mide la altura de tu triangulo:</label>
+                        <input id="InputAlturaTriangulo" type="number" />
+
+                        <button type="button" onclick="calcularPerimetroTriangulo()">
+                            Calcular el Per&iacute;metro
+                        </button>
+                        <button type="button" onclick="calcularAreaTriangulo()">
+                            Calcular el &Aacute;rea
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="serviceBox">
+                <div class="icon" style="--i:#C7EBBF">
+                    <ion-icon name="ellipse-outline"></ion-icon>
+                </div>
+                <div class="content">
+                    <h2>Circulo</h2>
+                    <h4>Calcula el &aacute;rea y per&iacute;metro de un Circulo</h4>
+
+                    <form>
+                        <label for="InputCirculo">Escribe cu&aacute;nto mide el radio de tu circulo:</label>
+                        <input id="InputCirculo" type="number" />
+                        <button type="button" onclick="calcularPerimetroCirculo()">
+                            Calcular el Per&iacute;metro
+                        </button>
+                        <button type="button" onclick="calcularAreaCirculo()">
+                            Calcular el &Aacute;rea
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="serviceBox">
+                <div class="icon" style="--i:#F36304">
+                    <ion-icon name="tablet-landscape-outline"></ion-icon>
+                </div>
+                <div class="content">
+                    <h2>Rectangulo</h2>
+                    <h4>Calcula el &aacute;rea y per&iacute;metro de un Rectangulo</h4>
+
+                    <form>
+                        <label for="InputBaseIsosceles">Escribe cu&aacute;nto mide la base del triangulo:</label>
+                        <input id="InputBaseIsosceles" type="number" />
+
+                        <label for="InputLadoAIsosceles">Escribe cu&aacute;nto mide el segundo lado del
+                            triangulo:</label>
+                        <input id="InputLadoAIsosceles" type="number" />
+
+                        <label for="InputLadoBIsosceles">Escribe cu&aacute;nto mide el tercer lado del
+                            triangulo:</label>
+                        <input id="InputLadoBIsosceles" type="number" />
+
+                        <button type="button" onclick="calcularAlturaIsosceles()">
+                            Calcular la altura
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- IonicIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Analisis -->
+    <script src="./figuras.js"></script>
+</body>
+
+</html>
