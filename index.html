@@ -4,26 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Curso práctico de Js</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | Js Práctico</title>
 </head>
 <body>
-    <header>
-        <h1>Talleres del Curso Práctico de JS</h1>
-    </header>
-    <p>Estos retos fueron desarrollador por Victor M.</p>
+    <section class="backgroud-points">
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+        <div class="glowing">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
 
-    <section>
-        <nav>
-            <ol>
-                <li><a href="figuras.html">Taller #1</a></li>
-                <li><a href="descuentos.html">Taller #2</a></li>
-                <li><a href="MediaMedianaModa/promedio.html">Taller #3a</a></li>
-                <li><a href="MediaMedianaModa/Mediana.html">Taller #3b</a></li>
-                <li><a href="MediaMedianaModa/Moda.html">Taller #3c</a></li>
-                <li><a href="MediaMedianaModa/salarios.html">Taller #4</a></li>
-            </ol>
-        </nav>
     </section>
-    <section></section>
+
+    <header>
+        <section class="header-title">
+            <h1>Talleres Prácticos de<img class="header-title__image"></img></h1>
+        </section>
+        <p class="header-description">Los siguientes talleres fuerón desarrollados para mejorar en la práctica de
+            JavaScript</p>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://i.gifer.com/Ui02.gif" alt="Cube">
+                </div>
+                <div class="content">
+                    <h3>Figuras Geometricas</h3>
+                    <p>En este taller se podrá calcular el area y perimetro de figuras geometricas, haciendo uso de fórmulas, funciones de Js, y su integración en HTML.</p>
+                    <a class="card-button" href="figuras.html"><span>Ver 👀</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://media.giphy.com/media/KxtmKWcF2k2HhQXot0/giphy-downsized-large.gif"
+                        alt="porcentaje">
+                </div>
+                <div class="content">
+                    <h3>Porcentajes</h3>
+                    <p>Calcula el porcentaje y descuento para conocer el precio a pagar de tus productos para el hogar</p>
+                    <a class="card-button" href="descuentos.html"><span>Ver 👀</span></a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://i.pinimg.com/originals/c9/91/72/c99172c17b83d3c620b997858351b2a5.gif"
+                        alt="stadistics">
+                </div>
+                <div class="content">
+                    <h3>Medidas de Tendencia Central</h3>
+                    <p>Haz uso de las distintas medidas de tendencia central para obtener estadisticas precisas.</p>
+                    <a class="card-button" href="MediaMedianaModa/Mediana.html"><span>Ver 👀</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://cdn.dribbble.com/users/743668/screenshots/6196706/money_pile_dribble_1.gif"
+                        alt="money">
+                </div>
+                <div class="content">
+                    <h3>Salarios</h3>
+                    <p>Observa la representación de una lista de salarios en Colombia, utilizando médidas de tendencia central</p>
+                    <a class="card-button" href="MediaMedianaModa/salarios.html"><span>Ver 👀</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Desarrollado por Victor M. con 💛</p>
+    </footer>
 </body>
 </html>
