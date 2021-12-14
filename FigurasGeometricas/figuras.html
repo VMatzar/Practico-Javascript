@@ -13,7 +13,7 @@
     <header class="header-container">
         <h1>Figuras Geometricas</h1>
         <p>Primer Taller del Curso Pr&aacute;ctico de JavaScript. Calcula el perimetro y area de un cuadrado, triangulo,
-            circulo, cuadrado</p>
+            circulo y/o rectangulo</p>
     </header>
 
     <section class="geometry-container">
@@ -69,10 +69,12 @@
                                 triangulo:</label>
                             <input id="InputAlturaTriangulo" type="number" />
                         </section>
-                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button" onclick="calcularPerimetroTriangulo()">
+                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
+                            onclick="calcularPerimetroTriangulo()">
                             Calcular Per&iacute;metro
                         </button>
-                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button" onclick="calcularAreaTriangulo()">
+                        <button style="--i:#f0db4f;--o:#ffbb00ef;" class="card-button" type="button"
+                            onclick="calcularAreaTriangulo()">
                             Calcular &Aacute;rea
                         </button>
                     </form>
@@ -80,48 +82,53 @@
             </div>
 
             <div class="serviceBox">
-                <div class="icon" style="--i:#C7EBBF">
+                <div class="icon" style="--i:#C7EBBF;">
                     <ion-icon name="ellipse-outline"></ion-icon>
                 </div>
                 <div class="content">
                     <h2>Circulo</h2>
                     <h4>Calcula el &aacute;rea y per&iacute;metro de un Circulo</h4>
 
-                    <form>
-                        <label for="InputCirculo">Escribe cu&aacute;nto mide el radio de tu circulo:</label>
-                        <input id="InputCirculo" type="number" />
-                        <button type="button" onclick="calcularPerimetroCirculo()">
-                            Calcular el Per&iacute;metro
+                    <form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputCirculo">Escribe cu&aacute;nto mide el radio de tu circulo:</label>
+                            <input id="InputCirculo" type="number" />
+                        </section>
+                        <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
+                            onclick="calcularPerimetroCirculo()">
+                            Calcular Per&iacute;metro
                         </button>
-                        <button type="button" onclick="calcularAreaCirculo()">
-                            Calcular el &Aacute;rea
+                        <button style="--i:#C7EBBF;--o:#91ec7f;" class="card-button" type="button"
+                            onclick="calcularAreaCirculo()">
+                            Calcular &Aacute;rea
                         </button>
                     </form>
                 </div>
             </div>
 
             <div class="serviceBox">
-                <div class="icon" style="--i:#F36304">
+                <div class="icon" style="--i:#F36304;">
                     <ion-icon name="tablet-landscape-outline"></ion-icon>
                 </div>
                 <div class="content">
                     <h2>Rectangulo</h2>
                     <h4>Calcula el &aacute;rea y per&iacute;metro de un Rectangulo</h4>
 
-                    <form>
-                        <label for="InputBaseIsosceles">Escribe cu&aacute;nto mide la base del triangulo:</label>
-                        <input id="InputBaseIsosceles" type="number" />
+                    <form form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputBaseRectangulo">Escribe cu&aacute;nto mide la base del Rectangulo:</label>
+                            <input id="InputBaseRectangulo" type="number" />
 
-                        <label for="InputLadoAIsosceles">Escribe cu&aacute;nto mide el segundo lado del
-                            triangulo:</label>
-                        <input id="InputLadoAIsosceles" type="number" />
-
-                        <label for="InputLadoBIsosceles">Escribe cu&aacute;nto mide el tercer lado del
-                            triangulo:</label>
-                        <input id="InputLadoBIsosceles" type="number" />
-
-                        <button type="button" onclick="calcularAlturaIsosceles()">
-                            Calcular la altura
+                            <label for="InputAlturaRectangulo">Escribe cu&aacute;nto mide la altura del Rectangulo</label>
+                            <input id="InputAlturaRectangulo" type="number" />
+                        </section>
+                        <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
+                            onclick="calcularPerimetroRectangulo()">
+                            Calcular Perimetro
+                        </button>
+                        <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
+                            onclick="calcularAreaRectangulo()">
+                            Calcular Area
                         </button>
                     </form>
                 </div>

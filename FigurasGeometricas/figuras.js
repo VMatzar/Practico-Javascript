@@ -28,18 +28,26 @@ function areaCirculo(radio){
     return (radio * radio) * pi;
 }
 
-
-//Altura Triangulo isosceles
-function alturaIsosceles(ladoa, ladob, base){
-    if(ladoa===ladob && ladoa!=base){
-        const altura = Math.sqrt((ladoa*ladoa) - ((base*base)/4));
-        alert(`La altura del triangulo Isosceles es: ${altura}`);
-    }   else{
-        alert("El triangulo isosceles debe tener dos lados iguales y uno no, coloque los valores nuevamente");
-    }
+//Código del Rectangulo
+function perimetroRectangulo(base, altura){
+    return 2 * ( base + altura);
+}
+function areaRectangulo(base, altura){
+    return base * altura;
 }
 
-//Aquí Interactuamos con el HTML
+
+//Altura Triangulo isosceles
+// function alturaIsosceles(ladoa, ladob, base){
+//     if(ladoa===ladob && ladoa!=base){
+//         const altura = Math.sqrt((ladoa*ladoa) - ((base*base)/4));
+//         alert(`La altura del triangulo Isosceles es: ${altura}`);
+//     }   else{
+//         alert("El triangulo isosceles debe tener dos lados iguales y uno no, coloque los valores nuevamente");
+//     }
+// }
+
+//Interacción con HTML:
 // C U A D R A D O 
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");//Devuelve valor string
@@ -99,15 +107,37 @@ function calcularAreaCirculo(){
 }
 
 //I S O S C E L E S 
-function calcularAlturaIsosceles(){
-    const inputLadoA = document.getElementById("InputLadoAIsosceles");
-    const valueLadoA = Number(inputLadoA.value);
+// function calcularAlturaIsosceles(){
+//     const inputLadoA = document.getElementById("InputLadoAIsosceles");
+//     const valueLadoA = Number(inputLadoA.value);
 
-    const inputLadoB = document.getElementById("InputLadoBIsosceles");
-    const valueLadoB = Number(inputLadoB.value);
+//     const inputLadoB = document.getElementById("InputLadoBIsosceles");
+//     const valueLadoB = Number(inputLadoB.value);
 
-    const inputBase = document.getElementById("InputBaseIsosceles");
+//     const inputBase = document.getElementById("InputBaseIsosceles");
+//     const valueBase = Number(inputBase.value);
+
+//     alturaIsosceles(valueLadoA, valueLadoB, valueBase);
+// }
+
+//R E C T A N G U L O
+function calcularPerimetroRectangulo(){
+    const inputBase = document.getElementById("InputBaseRectangulo");
     const valueBase = Number(inputBase.value);
 
-    alturaIsosceles(valueLadoA, valueLadoB, valueBase);
+    const inputAltura = document.getElementById("InputAlturaRectangulo");
+    const valueAltura = Number(inputAltura.value);
+
+    const perimetro = perimetroRectangulo(valueBase, valueAltura);
+    alert("El perimetro es "+ perimetro);
+}
+function calcularAreaRectangulo(){
+    const inputBase = document.getElementById("InputBaseRectangulo");
+    const valueBase = Number(inputBase.value);
+
+    const inputAltura = document.getElementById("InputAlturaRectangulo");
+    const valueAltura = Number(inputAltura.value);
+
+    const area = areaRectangulo(valueBase, valueAltura);
+    alert("El area es "+ area);
 }
