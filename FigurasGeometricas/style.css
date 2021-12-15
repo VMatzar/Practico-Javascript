@@ -14,7 +14,6 @@ body{
     background:#1d3e52;
 }
 html{
-    font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
 .header-container{
@@ -51,7 +50,7 @@ html{
     min-width: 300px;
     width: 50vw;
     max-width: 530px;
-    height: 530px;
+    height: 580px;
     background: #51446e;
     border-radius: 20px;
     overflow: hidden;
