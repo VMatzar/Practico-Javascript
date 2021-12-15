@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    /*Colores*/
+    --js-yellow: #f0db4f;
+    --strong-orange:#f36304;
+    --mustard-yellow:#ffca00;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background:#1d3e52;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 15px;
+    width: 100vw;
+}
+header h1{
+    color:white;
+}
+header p{
+    color:var(--js-yellow);
+}
+
+
+.geometry-container{
+    display:flex;
+    justify-content: center;
+}
+.container{
+    position:relative;
+    width: 1200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+.container .serviceBox{
+    position: relative;
+    min-width: 300px;
+    width: 50vw;
+    max-width: 530px;
+    height: 580px;
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .serviceBox .icon{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i); /*Color dependerá del root i embebido en html*/
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox:hover .icon{
+    top:30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+.container .serviceBox .icon i{
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.container .serviceBox:hover .icon i{
+    font-size: 2.5em;
+    transition-delay: 0s;
+}
+.container .serviceBox .content{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .serviceBox:hover .content{
+    transition-delay: 0.25s;
+    transform: scale(1);
+}
+.container .serviceBox .content h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.container .serviceBox .content{
+    font-weight: 300px;
+    line-height: 1.5em;
+}
+.container .serviceBox .content .form-container .labelAndInputs{
+    padding: 6px 0;
+    display:flex;
+    flex-direction: column;
+}
+.container .serviceBox .content .form-container .labelAndInputs input,
+.container .serviceBox .content .form-container .labelAndInputs select{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;
+    margin: 4px 55px 12px 55px;
+  }
+  .container .serviceBox .content .form-container .labelAndInputs input:hover,
+  .container .serviceBox .content .form-container .labelAndInputs select:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container .serviceBox .content .form-container .card-button {
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: var(--o);
+    border: none;
+    z-index: 1;
+  }
+  .container .serviceBox .content .form-container .card-button:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-image: linear-gradient(315deg, var(--o) 0%, var(--i) 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .container .serviceBox .content .form-container .card-button:hover {
+    color: #000;
+  }
+  .container .serviceBox .content .form-container .card-button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .container .serviceBox .content .form-container .card-button:active {
+    top: 2px;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin: 25px 0;
+}
+
