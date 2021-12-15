@@ -18,8 +18,11 @@ function priceDiscount() {
     const priceWithDiscount = calcularPrecioConDescuento(priceValue, discountValue);
 
     const resultP = document.getElementById("ResultParagraph");
-    resultP.innerText = `El precio con descuento son $ ${priceWithDiscount}`;
+    resultP.innerText = `El precio con descuento es de $ ${priceWithDiscount}`;
 }
+
+
+
 
 var codigosDeDescuento =
     [
@@ -29,20 +32,20 @@ var codigosDeDescuento =
         { codigo: "Luna", descuento: 40 }
     ];
 function priceCodeDiscount() {
-    const inputPrice = document.getElementById("InputPrice");
+    const inputPrice = document.getElementById("InputPrice1");
     const priceValue = Number(inputPrice.value);
 
     const inputCode = document.getElementById("InputDiscountCode");
     const discountCodeValue = inputCode.value;
 
-    // var arrayCodigoIngresado = codigosDeDescuento.find(function(code) {
-    //     return code.codigo == discountCodeValue;
-    // });
+    var arrayCodeEntered = codigosDeDescuento.find(function(code) {
+        return code.codigo == discountCodeValue;
+    });
 
 
 
-    // const resultP = document.getElementById("ResultDiscountCodeParagraph");
-    // resultP.innerText = `Su codigo de descuento nos da un descuento de ${arrayCodigoIngresado.descuento} %`;
+    const resultP = document.getElementById("ResultDiscountCodeParagraph");
+    resultP.innerText = `Su codigo de descuento nos da un descuento de ${arrayCodeEntered.descuento} %`;
 
     // const priceWithDiscount = calcularPrecioConDescuento(priceValue, arrayCodigoIngresado.descuento);
     // const resultLastPrice = document.getElementById("ResultLastPriceParagraph");

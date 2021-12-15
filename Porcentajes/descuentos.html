@@ -5,36 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcentajes | JS Práctico</title>
+    <title>Descuentos | JS Práctico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 930px)">
 </head>
 
 <body>
     <header>
         <h1>Porcentajes y Descuentos</h1>
-        <p>Este es el seghundo taller del Curso Práctico de Js</p>
+        <p>Este es el segundo taller del Curso Práctico de Js</p>
     </header>
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form>
-            <label for="InputPrice">Escribe el precio de tu producto</label>
-            <input id="InputPrice" type="number">
-            <label for="InputDiscount">Escribe el descuento de tu producto</label>
-            <input id="InputDiscount" type="number">
-            <button type="button" onclick="priceDiscount()">
-                Calcular el precio con descuento
-            </button>
-            <p id="ResultParagraph"></p>
-            <br>
-            <label for="InputDiscountCode">Si tiene un código de descuento, escriba acá el código:</label>
-            <input id="InputDiscountCode" type="text">
-            <button type="button" onclick="priceCodeDiscount()">
-                Calcular el precio con código de descuento
-            </button>
-            <p id="ResultDiscountCodeParagraph"></p>
-            <p id="ResultLastPriceParagraph"></p>
-        </form>
+    <section class="geometry-container">
+        <div class="container">
+            <div class="serviceBox">
+                <div class="icon" style="--i:#F36304;">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="content">
+                    <h2>Descuento</h2>
+                    <h4>Calcula el precio a pagar de tus productos con descuento</h4>
+                    <form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputPrice">Escribe el precio de tu producto</label>
+                            <input id="InputPrice" type="number" placeholder=0>
+                            <label for="InputDiscount">Escribe el descuento de tu producto</label>
+                            <input id="InputDiscount" type="number">
+                        </section>
+                        <button style="--i:#f5a977;--o:#F36304;" class="card-button" type="button"
+                            onclick="priceDiscount()">
+                            Calcular precio con descuento
+                        </button>
+                        <br>
+                        <br>
+                        <p style="color:#F36304" id="ResultParagraph"></p>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="serviceBox">
+                <div class="icon" style="--i:#ffca00;">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="content">
+                    <h2>Cupón de Descuento</h2>
+                    <h4>Calcula el precio a pagar de tus productos con un código descuento</h4>
+                    <form class="form-container">
+                        <section class="labelAndInputs">
+                            <label for="InputPrice1">Escribe el precio de tu producto</label>
+                            <input id="InputPrice1" type="number" placeholder=0>
+                            <label for="InputDiscountCode">Si tiene un código de descuento, escribe acá el
+                                código:</label>
+                            <!-- <input id="InputDiscountCode" type="text"> -->
+                            <select name="Select" id="InputDiscountCode">
+                                <option value="Manzana">Manzana</option>
+                                <option value="Pera">Pera</option>
+                                <option value="Sandia">Sandia</option>
+                                <option value="Luna">Luna</option>
+                            </select>
+                        </section>
+                        <button style="--i:#ffca00;--o:#ffe600e3;" class="card-button" type="button"
+                            onclick="priceCodeDiscount()">
+                            Calcular precio con descuento
+                        </button>
+                        <br>
+                        <br>
+                        <p style="color:#ffca00" id="ResultDiscountCodeParagraph"></p>
+                        <p style="color:#ffca00" id="ResultLastPriceParagraph"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- IonicIcons -->
+    <script src="https://kit.fontawesome.com/6fd62426bb.js" crossorigin="anonymous"></script>
+    <!-- Análisis -->
     <script src="descuentos.js"></script>
+
+    <footer>
+        <p>Desarrollado por Victor M. con 💛</p>
+    </footer>
 </body>
 
 </html>
