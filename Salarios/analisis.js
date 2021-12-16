@@ -54,3 +54,5 @@ console.log({
     medianaGeneralColombia,
     medianaTop10Colombia
 })
+
+

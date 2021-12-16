@@ -12,6 +12,8 @@
 }
 body{
     background:#1d3e52;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 html{
     font-family: 'Poppins', sans-serif;

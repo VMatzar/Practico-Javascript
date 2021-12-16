@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salarios </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Salarios</h1>
+    <header class="header-container">
+        <h1>Salarios</h1>
+        <p>Último taller Práctico de JavaScript</p>
+    </header>
+    <main>
+        <article class="form-container">
+            <form>
+                <h3>Agrega a un nuevo empleado</h3>
+                <section class="form__labelAndInputs">
+                    <label for="InputName">Escribe el nombre del empleado: </label>
+                    <input id="InputName" type="text">
+                    <label for="InputSalary">Ingresa el salario del empleado: </label>
+                    <input id="InputSalary" type="number">
+                </section>
+                <button style="--i:#f0db4f;--o:#ebbc02;" class="form__button" type="button" onclick="addEmployee()">
+                    ⪡ Agregar ⪢
+                </button>
+            </form>
+        </article>
+        <article class="myItemList-Container">
+            <h3>Listado de Empleados y Salarios</h3>
+            <ol id="myItemList">
+            </ol>
+        </article>
+    </main>
+    <footer>
+        <p>Desarrollado por Victor M. con 💛</p>
+    </footer>
 </body>
 <script src="./salarios.js"></script>
 <script src="./analisis.js"></script>
+
 </html>

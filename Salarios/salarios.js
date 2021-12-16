@@ -1,4 +1,4 @@
-const colombia = [];
+let colombia = [], ol = document.createElement('ol');
 colombia.push({
   name: "Camila",
   salary: 500,
@@ -79,3 +79,43 @@ colombia.push({
   name: "Bill Gates",
   salary: 100000000,
 });
+
+//Integración con HTML
+document.getElementById('myItemList').appendChild(ol);
+let li;
+colombia.forEach(function(item){
+  li = document.createElement('li');
+  ol.appendChild(li);
+
+  let line = `${item.name} = $${item.salary}`;
+  li.innerHTML += line;
+});
+
+//Agregar empleado
+function addEmployee(){
+  //Tomar datos
+  let employee = document.getElementById("InputName");
+  valueName = employee.value;
+
+  let salaryEmployee = document.getElementById("InputSalary");
+  valueSalaryEmployee = Number(salaryEmployee.value);
+
+  //Objeto con datos
+  let nuevoEmpleado = {
+    name: valueName,
+    salary: valueSalaryEmployee
+  };
+
+  //Agregar objeto con datos al array de colombia
+  colombia.push(nuevoEmpleado);
+
+  //Mostrar en html el nuevo dato
+  li = document.createElement('li');
+  ol.appendChild(li);
+
+  let line = `${valueName} = $${valueSalaryEmployee}`;
+  li.innerHTML += line;
+
+  //Alerta 
+  alert(`¡Los datos del empleado ${valueName} han sido registrados!`)
+}
