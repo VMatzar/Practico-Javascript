@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médidas | JS Práctico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 930px)">
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>Médidas de Tendencia Central</h1>
+        <p>Haz uso de las distintas medidas de tendencia central para obtener estadisticas precisas.</p>
+    </header>
+    <main>
+        <article class="form-container">
+            <form>
+                <h3>Nuevo valor</h3>
+                <section class="form__labelAndInputs">
+                    <label for="InputNewValue">Ingresa el nuevo valor: </label>
+                    <input id="InputNewValue" type="number">
+                </section>
+                <button id="btnAgregar" style="--i:#f0db4f;--o:#ebbc02;" class="form__button" type="button" onclick="addValue()">
+                    ⪡ Agregar ⪢
+                </button>
+            </form>
+        </article>
+        <article class="results-Container">
+            <section class="myItemList-Container">
+                <h3>Listado de Valores</h3>
+                <ol id="myItemList">
+                </ol>
+            </section>
+            <section class="medidas-Container">
+                <h3>Medidas</h3>
+                <p>Selecciona la medida de tendencia central a calcular</p>
+                <select name="select" id="selectMedida" onchange="showResult()">
+                    <option selected value="promedio">Promedio Aritmetico</option>
+                    <option value="mediana">Mediana</option>
+                    <option value="moda">Moda</option>
+                    <option value="promedioGeometrico">Promedio Geometrico</option>
+                </select>
+                <p id="resultP"></p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Desarrollado por Victor M. con 💛</p>
+    </footer>
+</body>
+<script src="valores.js"></script>
+<script src="Mediana.js"></script>
+<script src="Moda.js"></script>
+<script src="promedio.js"></script>
+<script src="PromedioGeometrico.js"></script>
+
+</html>

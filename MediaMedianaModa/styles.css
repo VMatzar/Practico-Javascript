@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    /*Colores*/
+    --js-yellow: #f0db4f;
+    --strong-orange:#f36304;
+    --mustard-yellow:#ffca00;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background:#1d3e52;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+.header-container{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 15px;
+    width: 100vw;
+}
+.header-container h1{
+    color:white;
+}
+.header-container p{
+    color:var(--js-yellow);
+}
+.form-container{
+    width: 100vw;
+    display:grid;
+    justify-content: center;
+}
+.form-container form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--mustard-yellow);
+    width: 90vw;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 10px 10px 25px 10px;
+    background-color: #51446e;
+    border-radius: 15px;
+    padding: 20px;
+}
+.form-container form h3{
+    color:white;
+    text-align: center;
+}
+.form-container .form__labelAndInputs{
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form-container .form__labelAndInputs label{
+    margin: 20px 0 5px;
+}
+.form-container .form__labelAndInputs input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;
+  }
+  .form-container .form__labelAndInputs input:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    font-family: 'Poppins', sans-serif;
+  }
+  .form-container form .form__button{
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: var(--o);
+    border: none;
+    z-index: 1;
+  }
+  .form-container form .form__button:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-image: linear-gradient(315deg, var(--o) 0%, var(--i) 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .form-container form .form__button:hover {
+    color: #000;
+  }
+  .form-container form .form__button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .form-container form .form__button:active {
+    top: 2px;
+  }
+.results-Container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.myItemList-Container{
+    display: flex;
+    align-items: center;
+    color:white;
+    flex-direction: column;
+}
+.myItemList-Container h3{
+    color: white;
+    text-align: center;
+    margin: 0 7px 8px 7px;
+}
+main .results-Container .medidas-Container{
+    background-color: white;
+    min-width: 310px;
+    width: 86%;
+    max-width: 400px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+main .results-Container .medidas-Container h3{
+    padding: 15px 0;
+} 
+main .results-Container .medidas-Container p{
+    padding: 0 15px 15px 15px;
+    color: #51446e;
+
+} 
+main .results-Container .medidas-Container select{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;
+    margin: 4px 55px 12px 55px;
+    font-family: 'Poppins', sans-serif;
+  }
+  main .results-Container .medidas-Container select:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    font-family: 'Poppins', sans-serif;
+  }
+footer{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin: 25px 0;
+}

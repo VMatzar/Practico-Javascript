@@ -1,9 +1,9 @@
-const lista = [
-    100,
-    200,
-    300,
-    500
-];
+// const lista = [
+//     100,
+//     200,
+//     300,
+//     500
+// ];
 
 
 function calcularMediaAritmetica(lista){
