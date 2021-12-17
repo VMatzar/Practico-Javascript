@@ -123,9 +123,13 @@ html{
   .form-container form .form__button:active {
     top: 2px;
   }
-
+.results-Container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .myItemList-Container{
-    width: 100vw;
     display: flex;
     align-items: center;
     color:white;
@@ -136,6 +140,40 @@ html{
     text-align: center;
     margin: 0 7px 8px 7px;
 }
+main .results-Container .mediana-Container{
+    background-color: white;
+    min-width: 310px;
+    width: 86%;
+    max-width: 400px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+main .results-Container .mediana-Container h3{
+    padding: 15px 0;
+} 
+main .results-Container .mediana-Container p{
+    padding: 0 15px 15px 15px;
+    color: #51446e;
+
+} 
+main .results-Container .mediana-Container select{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 25px;
+    margin: 4px 55px 12px 55px;
+    font-family: 'Poppins', sans-serif;
+  }
+  main .results-Container .mediana-Container select:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    font-family: 'Poppins', sans-serif;
+  }
 footer{
     display: flex;
     justify-content: center;

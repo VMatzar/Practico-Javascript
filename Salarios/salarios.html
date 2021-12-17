@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salarios </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 930px)">
+
 </head>
 
 <body>
@@ -29,10 +31,21 @@
                 </button>
             </form>
         </article>
-        <article class="myItemList-Container">
-            <h3>Listado de Empleados y Salarios</h3>
-            <ol id="myItemList">
-            </ol>
+        <article class="results-Container">
+            <section class="myItemList-Container">
+                <h3>Listado de Empleados y Salarios</h3>
+                <ol id="myItemList">
+                </ol>
+            </section>
+            <section class="mediana-Container">
+                <h3>Mediana Salarial</h3>
+                <p>Calcula la mediana salarial de todos los empleados o solamente del top 10.</p>
+                <select name="select" id="selectMediana" onchange="showMediana()">
+                    <option selected value="medianaGeneral">Mediana General</option>
+                    <option value="medianaTop10">Mediana Top 10"</option>
+                </select>
+                <p id="result"></p>
+            </section>
         </article>
     </main>
     <footer>

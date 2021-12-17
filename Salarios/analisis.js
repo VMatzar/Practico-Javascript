@@ -50,9 +50,17 @@ const salariosColombiaTop10 = salariosColSorted.splice(spliceStart, spliceCount)
 
 const medianaTop10Colombia = medianaSalarios(salariosColombiaTop10);
 
-console.log({
-    medianaGeneralColombia,
-    medianaTop10Colombia
-})
+// console.log({
+//     medianaGeneralColombia,
+//     medianaTop10Colombia
+// })
+function showMediana(){
+    const resultP = document.getElementById("result");
+    if(document.getElementById('selectMediana').value == "medianaGeneral") {
+        resultP.innerText = "La mediana general es   $" + medianaGeneralColombia;
+   }else{
+        resultP.innerText = "La mediana del top 10 es   $" + medianaTop10Colombia;
+   }
+}
 
 

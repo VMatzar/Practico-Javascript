@@ -83,7 +83,7 @@ colombia.push({
 //Integración con HTML
 document.getElementById('myItemList').appendChild(ol);
 let li;
-colombia.forEach(function(item){
+colombia.forEach(function (item) {
   li = document.createElement('li');
   ol.appendChild(li);
 
@@ -92,7 +92,7 @@ colombia.forEach(function(item){
 });
 
 //Agregar empleado
-function addEmployee(){
+function addEmployee() {
   //Tomar datos
   let employee = document.getElementById("InputName");
   valueName = employee.value;
@@ -100,22 +100,26 @@ function addEmployee(){
   let salaryEmployee = document.getElementById("InputSalary");
   valueSalaryEmployee = Number(salaryEmployee.value);
 
-  //Objeto con datos
-  let nuevoEmpleado = {
-    name: valueName,
-    salary: valueSalaryEmployee
-  };
+  if (valueName == "" || valueSalaryEmployee == 0) {
+    alert(`Debe ingresar el nombre y salario para agregar`);
+  } else {
+    //Objeto con datos
+    let nuevoEmpleado = {
+      name: valueName,
+      salary: valueSalaryEmployee
+    };
 
-  //Agregar objeto con datos al array de colombia
-  colombia.push(nuevoEmpleado);
+    //Agregar objeto con datos al array de colombia
+    colombia.push(nuevoEmpleado);
 
-  //Mostrar en html el nuevo dato
-  li = document.createElement('li');
-  ol.appendChild(li);
+    //Mostrar en html el nuevo dato
+    li = document.createElement('li');
+    ol.appendChild(li);
 
-  let line = `${valueName} = $${valueSalaryEmployee}`;
-  li.innerHTML += line;
+    let line = `${valueName} = $${valueSalaryEmployee}`;
+    li.innerHTML += line;
 
-  //Alerta 
-  alert(`¡Los datos del empleado ${valueName} han sido registrados!`)
+    //Alerta 
+    alert(`¡Los datos del empleado ${valueName} han sido registrados!`)
+  }
 }

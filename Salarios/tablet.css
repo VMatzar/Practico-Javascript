@@ -1,0 +1,7 @@
+.results-Container{
+    flex-direction: row;
+}
+main .results-Container .mediana-Container{
+    
+    margin-top: 0;
+}
