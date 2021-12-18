@@ -55,7 +55,6 @@ header .header-description{
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    gap:40px;
 }
 .container .card{
     position: relative;

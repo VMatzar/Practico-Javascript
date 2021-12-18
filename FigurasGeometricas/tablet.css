@@ -5,3 +5,6 @@
 .container .serviceBox{
     height: 500px;
 }
+.container{  
+    gap: 20px;
+}
